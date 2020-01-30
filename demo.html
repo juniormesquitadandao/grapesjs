@@ -137,14 +137,14 @@
           margin-bottom: 8px;
         }
 
-        .gjs-block-category.gjs-open {
+/*        .gjs-block-category.gjs-open {
           border-bottom: none;
         }
 
         .gjs-block-category:not(:first-child){
           display: none;
         }
-
+*/
     </style>
   </head>
   <body>
@@ -208,16 +208,16 @@
           labels: {
             column1: '1 Coluna',
             column2: '2 Colunas',
-            // column3: '3 Colunas',
-            // 'column3-7': '2 Colunas 3/7',
+            column3: '3 Colunas',
+            'column3-7': '2 Colunas 3/7',
             text: 'Texto',
-            // link: 'Link',
+            link: 'Link',
             image: 'Imagem',
             video: 'Vídeo',
-            // map: 'Mapa',
-            // 'link-block': 'Bloco de links',
-            // quote: 'Citação',
-            // 'text-basic': 'Sessão de texto'
+            map: 'Mapa',
+            'link-block': 'Bloco de links',
+            quote: 'Citação',
+            'text-basic': 'Sessão de texto'
           },
           categories: {
             Basic: 'Básico',
@@ -837,15 +837,15 @@
         var blockManager = editor.BlockManager;
         // blockManager.remove('column1');
         // blockManager.remove('column2');
-        blockManager.remove('column3');
-        blockManager.remove('column3-7');
-        blockManager.remove('link');
+        // blockManager.remove('column3');
+        // blockManager.remove('column3-7');
+        // blockManager.remove('link');
         // blockManager.remove('image');
         // blockManager.remove('video');
-        blockManager.remove('map');
-        blockManager.remove('link-block');
-        blockManager.remove('quote');
-        blockManager.remove('text-basic');
+        // blockManager.remove('map');
+        // blockManager.remove('link-block');
+        // blockManager.remove('quote');
+        // blockManager.remove('text-basic');
 
         blockManager.get('text').attributes.content.content = 'Insira seu texto aqui';
 

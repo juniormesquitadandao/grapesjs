@@ -206,14 +206,14 @@
         // so this should be omitted from other local files
         blockManager: {
           labels: {
-            // column1: '1 Coluna',
-            // column2: '2 Colunas',
+            column1: '1 Coluna',
+            column2: '2 Colunas',
             // column3: '3 Colunas',
             // 'column3-7': '2 Colunas 3/7',
             text: 'Texto',
             // link: 'Link',
-            // image: 'Imagem',
-            // video: 'Vídeo',
+            image: 'Imagem',
+            video: 'Vídeo',
             // map: 'Mapa',
             // 'link-block': 'Bloco de links',
             // quote: 'Citação',
@@ -835,13 +835,13 @@
         $('#gjs').append($('.ad-cont'));
 
         var blockManager = editor.BlockManager;
-        blockManager.remove('column1');
-        blockManager.remove('column2');
+        // blockManager.remove('column1');
+        // blockManager.remove('column2');
         blockManager.remove('column3');
         blockManager.remove('column3-7');
         blockManager.remove('link');
-        blockManager.remove('image');
-        blockManager.remove('video');
+        // blockManager.remove('image');
+        // blockManager.remove('video');
         blockManager.remove('map');
         blockManager.remove('link-block');
         blockManager.remove('quote');
